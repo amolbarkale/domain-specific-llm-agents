@@ -8,7 +8,8 @@ import os
 import time
 from datetime import datetime
 from typing import Dict, List, Any, Optional
-from src.utils import load_prompt_template, save_json, calculate_statistics
+from src.utils import load_prompt_template, save_json, call_llm
+
 
 class MathTutorAgent:
     def __init__(self, base_dir: str = "."):
@@ -99,15 +100,8 @@ class MathTutorAgent:
         Call local LLM with the prompt
         Replace this with actual LLM API calls
         """
-        # TODO: Replace with actual LLM call
-        # Example for Ollama:
-        # import requests
-        # response = requests.post('http://localhost:11434/api/generate',
-        #                        json={'model': 'mistral', 'prompt': prompt, 'stream': False})
-        # return response.json()['response']
-        
-        # Simulation for testing
-        return self.simulate_llm_response(prompt, strategy)
+        return call_llm(prompt)
+
     
     def simulate_llm_response(self, prompt: str, strategy: str) -> str:
         """Simulate LLM responses for testing purposes"""
