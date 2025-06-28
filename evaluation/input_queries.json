@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "topic": "Algebra",
+    "question": "Solve for x: 4x - 7 = 21"
+  },
+  {
+    "id": 2,
+    "topic": "Geometry",
+    "question": "Explain the properties of a parallelogram."
+  },
+  {
+    "id": 3,
+    "topic": "Mensuration",
+    "question": "Find the surface area of a cube with side length 5 cm."
+  },
+  {
+    "id": 4,
+    "topic": "Arithmetic",
+    "question": "What is the HCF of 36 and 60?"
+  },
+  {
+    "id": 5,
+    "topic": "Word Problems",
+    "question": "Ravi is twice as old as his sister. The sum of their ages is 36. What are their ages?"
+  },
+  {
+    "id": 6,
+    "topic": "Probability",
+    "question": "A coin is tossed once. What is the probability of getting a head?"
+  },
+  {
+    "id": 7,
+    "topic": "Data Handling",
+    "question": "Explain how to find the median from a set of numbers."
+  },
+  {
+    "id": 8,
+    "topic": "Algebra",
+    "question": "Factorize the expression: x² - 5x + 6"
+  },
+  {
+    "id": 9,
+    "topic": "Trigonometry (basic)",
+    "question": "What is sin(30°) and cos(60°)?"
+  },
+  {
+    "id": 10,
+    "topic": "Coordinate Geometry",
+    "question": "What is the distance between the points (3,4) and (0,0)?"
+  }
+]
