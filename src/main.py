@@ -8,7 +8,7 @@ import os
 import time
 from datetime import datetime
 from typing import Dict, List, Any, Optional
-from src.utils import load_prompt_template, save_json, call_llm
+from utils import load_prompt_template, save_json, call_llm
 
 
 class MathTutorAgent:
@@ -20,8 +20,16 @@ class MathTutorAgent:
         
         # Load test problems and evaluation criteria
         self.test_data = self.load_test_data()
-        self.test_problems = self.test_data["test_problems"]
-        self.evaluation_criteria = self.test_data["evaluation_criteria"]
+        self.test_problems = self.test_data
+
+        self.evaluation_criteria = {
+            "accuracy": {"scale": "binary"},
+            "reasoning_clarity": {"scale": "1-5"},
+            "hallucination_score": {"scale": "0-5"},
+            "consistency": {"scale": "1-5"},
+            "age_appropriateness": {"scale": "1-5"}
+        }
+
         
         # Initialize results storage
         self.results = []
@@ -231,38 +239,49 @@ class MathTutorAgent:
         print("=" * 60)
 
         for problem_data in self.test_problems:
-            print(f"\n📝 Problem {problem_data['id']}: {problem_data['problem']}")
-            print(f"   Type: {problem_data['type']} | Grade: {problem_data['grade_level']}")
+            question = problem_data["question"]
+            problem_id = problem_data.get("id", "N/A")
+            problem_type = problem_data.get("topic", "general")
+            expected = problem_data.get("expected_answer", "")
+            grade_level = problem_data.get("grade_level", "6–10")
+
+            print(f"\n📝 Problem {problem_id}: {question}")
+            print(f"   Topic: {problem_type} | Grade: {grade_level}")
             print("-" * 50)
 
             problem_results = {
-                "problem": problem_data,
+                "problem_id": problem_id,
+                "question": question,
+                "topic": problem_type,
+                "grade_level": grade_level,
                 "strategy_results": {},
                 "timestamp": datetime.now().isoformat()
             }
 
-            # Test each prompt strategy
             for strategy in self.prompt_strategies.keys():
                 print(f"\n🧠 Testing {strategy.replace('_', ' ').title()}...")
 
                 try:
-                    # Generate prompt
-                    prompt = self.generate_prompt(strategy, problem_data["problem"])
-
-                    # Call LLM (simulation or real)
+                    prompt = self.generate_prompt(strategy, question)
                     response = self.call_llm(prompt, strategy)
-
-                    # Evaluate response
                     evaluation = self.evaluate_response(
                         response=response,
-                        expected=problem_data["expected_answer"],
-                        problem_data=problem_data
+                        expected=expected,
+                        problem_data={
+                            "id": problem_id,
+                            "question": question,
+                            "type": problem_type,
+                            "grade_level": grade_level
+                        }
                     )
 
-                    # Log hallucination if needed
-                    self.log_hallucination(problem_data, strategy, response, evaluation["hallucination_score"])
+                    self.log_hallucination(
+                        problem_data={"id": problem_id, "question": question},
+                        strategy=strategy,
+                        response=response,
+                        score=evaluation["hallucination_score"]
+                    )
 
-                    # Store results
                     problem_results["strategy_results"][strategy] = {
                         "prompt": prompt,
                         "response": response,
@@ -277,26 +296,25 @@ class MathTutorAgent:
                         "response": ""
                     }
 
-            # Add to main results
             self.results.append(problem_results)
 
-        # Save output logs
+        # Save results
         output_path = os.path.join(self.evaluation_dir, "output_logs.json")
         save_json(self.results, output_path)
 
-        # Save hallucination log if needed
         if self.hallucination_cases:
             hallucination_path = os.path.join(self.evaluation_dir, "hallucination_log.md")
             with open(hallucination_path, "w") as f:
                 f.write("# Hallucination Cases Log\n\n")
                 for case in self.hallucination_cases:
                     f.write(f"### Problem ID {case['problem_id']} – Strategy: {case['strategy']}\n")
-                    f.write(f"**Problem**: {case['problem']}\n\n")
+                    f.write(f"**Question**: {case['problem']}\n\n")
                     f.write(f"**Response**:\n{case['response']}\n\n")
                     f.write(f"**Score**: {case['hallucination_score']}\n")
                     f.write(f"**Timestamp**: {case['timestamp']}\n\n---\n\n")
 
         print("\n✅ Evaluation completed. Results saved.")
+
 
 if __name__ == "__main__":
     agent = MathTutorAgent(base_dir=".")

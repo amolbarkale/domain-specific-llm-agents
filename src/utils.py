@@ -5,11 +5,10 @@ import torch
 
 # Load once globally to save time
 MODEL_NAME = "google/flan-t5-small"
-MODEL_CACHE_DIR = "/c/Users/Amol Barkale/.cache/huggingface/hub/models--google--flan-t5-small"
 
 # Load model + tokenizer
-tokenizer = AutoTokenizer.from_pretrained(MODEL_CACHE_DIR)
-model = AutoModelForSeq2SeqLM.from_pretrained(MODEL_CACHE_DIR)
+tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
+model = AutoModelForSeq2SeqLM.from_pretrained(MODEL_NAME)
 
 # Ensure model is on the right device
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
