@@ -1,0 +1,532 @@
+[
+  {
+    "problem_id": 1,
+    "question": "Solve for x: 4x - 7 = 21",
+    "topic": "Algebra",
+    "grade_level": "6\u201310",
+    "strategy_results": {
+      "zero_shot": {
+        "prompt": "You are a helpful math tutor for students in grades 6-10.\n\nYour role is to:\n- Provide clear, step-by-step solutions to math problems\n- Use age-appropriate language for middle and high school students\n- Show your work clearly\n- Give the final answer\n\nProblem: Solve for x: 4x - 7 = 21\n\nPlease solve this problem and provide a clear solution with the final answer.",
+        "response": "1",
+        "evaluation": {
+          "accuracy": true,
+          "reasoning_clarity": 1,
+          "hallucination_score": 0,
+          "consistency": 2,
+          "age_appropriateness": 4
+        }
+      },
+      "few_shot": {
+        "prompt": "You are a math tutor for students in grades 6-10. Here are examples of how to help students:\n\nExample 1:\nProblem: Solve for x: 2x + 4 = 10\nSolution:\nStep 1: Subtract 4 from both sides\n2x + 4 - 4 = 10 - 4\n2x = 6\n\nStep 2: Divide both sides by 2\n2x \u00c3\u00b7 2 = 6 \u00c3\u00b7 2\nx = 3\n\nAnswer: x = 3\n\nExample 2:\nProblem: What is 1/2 + 1/3?\nSolution:\nStep 1: Find the common denominator (6)\n1/2 = 3/6\n1/3 = 2/6\n\nStep 2: Add the fractions\n3/6 + 2/6 = 5/6\n\nAnswer: 5/6\n\nExample 3:\nProblem: Find the area of a rectangle with length 8cm and width 5cm\nSolution:\nStep 1: Recall the formula for area of rectangle\nArea = length \u00c3\u2014 width\n\nStep 2: Substitute the values\nArea = 8cm \u00c3\u2014 5cm = 40cm\u00c2\u00b2\n\nAnswer: 40 cm\u00c2\u00b2\n\nNow solve this problem following the same clear, step-by-step format:\n\nProblem: Solve for x: 4x - 7 = 21",
+        "response": "Answer: 5",
+        "evaluation": {
+          "accuracy": true,
+          "reasoning_clarity": 1,
+          "hallucination_score": 0,
+          "consistency": 2,
+          "age_appropriateness": 4
+        }
+      },
+      "chain_of_thought": {
+        "prompt": "You are a math tutor for students in grades 6-10. Think step-by-step and show your reasoning clearly.\n\nProblem: Solve for x: 4x - 7 = 21\n\nPlease solve this problem using the following thinking process:\n\n1. UNDERSTANDING: What type of math problem is this? What concepts are involved?\n\n2. PLANNING: What steps do I need to take to solve this? What formulas or methods should I use?\n\n3. SOLVING: Work through each step carefully, showing all calculations.\n\n4. CHECKING: Does my answer make sense? Can I verify it's correct?\n\n5. FINAL ANSWER: State the clear, final answer.\n\nRemember to:\n- Show all your work\n- Explain why each step is necessary\n- Use language appropriate for middle/high school students\n- Double-check your calculations",
+        "response": "Explain why each step is necessary",
+        "evaluation": {
+          "accuracy": true,
+          "reasoning_clarity": 2,
+          "hallucination_score": 0,
+          "consistency": 3,
+          "age_appropriateness": 4
+        }
+      },
+      "meta_prompting": {
+        "prompt": "You are a math tutor for students in grades 6-10. Before solving any problem, ask yourself these key questions to provide the best help:\n\nProblem: Solve for x: 4x - 7 = 21\n\nSELF-QUESTIONING PROCESS:\n\nAsk yourself:\n- What mathematical concept or topic does this problem involve?\n- What grade level is this appropriate for, and what should the student already know?\n- What formula, method, or approach should I use to solve this?\n- What are the key pieces of information given in the problem?\n- What exactly am I solving for?\n- Are there any common mistakes students make with this type of problem?\n- How can I explain this in a way that helps the student understand, not just get the answer?\n- What real-world connection can I make to help the student relate to this problem?\n\nNow, based on your self-questioning, provide a complete solution that:\n1. Identifies the problem type and approach\n2. Shows clear, step-by-step work\n3. Explains the reasoning behind each step\n4. Provides the final answer\n5. Includes a brief check or verification\n\nRemember: Your goal is to help the student learn and understand, not just complete their homework.",
+        "response": "1. Identify the problem type and approach 2. Explain the problem 3 steps 3. Describe the problem 4 parts 4 parts 4 parts 5 parts 3 parts 4 parts 5 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts 4 parts",
+        "evaluation": {
+          "accuracy": true,
+          "reasoning_clarity": 3,
+          "hallucination_score": 0,
+          "consistency": 4,
+          "age_appropriateness": 4
+        }
+      }
+    },
+    "timestamp": "2025-06-29T10:49:49.091715"
+  },
+  {
+    "problem_id": 2,
+    "question": "Explain the properties of a parallelogram.",
+    "topic": "Geometry",
+    "grade_level": "6\u201310",
+    "strategy_results": {
+      "zero_shot": {
+        "prompt": "You are a helpful math tutor for students in grades 6-10.\n\nYour role is to:\n- Provide clear, step-by-step solutions to math problems\n- Use age-appropriate language for middle and high school students\n- Show your work clearly\n- Give the final answer\n\nProblem: Explain the properties of a parallelogram.\n\nPlease solve this problem and provide a clear solution with the final answer.",
+        "response": "Explain the properties of a parallelogram.",
+        "evaluation": {
+          "accuracy": true,
+          "reasoning_clarity": 1,
+          "hallucination_score": 0,
+          "consistency": 3,
+          "age_appropriateness": 4
+        }
+      },
+      "few_shot": {
+        "prompt": "You are a math tutor for students in grades 6-10. Here are examples of how to help students:\n\nExample 1:\nProblem: Solve for x: 2x + 4 = 10\nSolution:\nStep 1: Subtract 4 from both sides\n2x + 4 - 4 = 10 - 4\n2x = 6\n\nStep 2: Divide both sides by 2\n2x \u00c3\u00b7 2 = 6 \u00c3\u00b7 2\nx = 3\n\nAnswer: x = 3\n\nExample 2:\nProblem: What is 1/2 + 1/3?\nSolution:\nStep 1: Find the common denominator (6)\n1/2 = 3/6\n1/3 = 2/6\n\nStep 2: Add the fractions\n3/6 + 2/6 = 5/6\n\nAnswer: 5/6\n\nExample 3:\nProblem: Find the area of a rectangle with length 8cm and width 5cm\nSolution:\nStep 1: Recall the formula for area of rectangle\nArea = length \u00c3\u2014 width\n\nStep 2: Substitute the values\nArea = 8cm \u00c3\u2014 5cm = 40cm\u00c2\u00b2\n\nAnswer: 40 cm\u00c2\u00b2\n\nNow solve this problem following the same clear, step-by-step format:\n\nProblem: Explain the properties of a parallelogram.",
+        "response": "Answer: The object's ts and ts are parallelograms.",
+        "evaluation": {
+          "accuracy": true,
+          "reasoning_clarity": 1,
+          "hallucination_score": 0,
+          "consistency": 3,
+          "age_appropriateness": 4
+        }
+      },
+      "chain_of_thought": {
+        "prompt": "You are a math tutor for students in grades 6-10. Think step-by-step and show your reasoning clearly.\n\nProblem: Explain the properties of a parallelogram.\n\nPlease solve this problem using the following thinking process:\n\n1. UNDERSTANDING: What type of math problem is this? What concepts are involved?\n\n2. PLANNING: What steps do I need to take to solve this? What formulas or methods should I use?\n\n3. SOLVING: Work through each step carefully, showing all calculations.\n\n4. CHECKING: Does my answer make sense? Can I verify it's correct?\n\n5. FINAL ANSWER: State the clear, final answer.\n\nRemember to:\n- Show all your work\n- Explain why each step is necessary\n- Use language appropriate for middle/high school students\n- Double-check your calculations",
+        "response": "Show all your work",
+        "evaluation": {
+          "accuracy": true,
+          "reasoning_clarity": 1,
+          "hallucination_score": 0,
+          "consistency": 2,
+          "age_appropriateness": 4
+        }
+      },
+      "meta_prompting": {
+        "prompt": "You are a math tutor for students in grades 6-10. Before solving any problem, ask yourself these key questions to provide the best help:\n\nProblem: Explain the properties of a parallelogram.\n\nSELF-QUESTIONING PROCESS:\n\nAsk yourself:\n- What mathematical concept or topic does this problem involve?\n- What grade level is this appropriate for, and what should the student already know?\n- What formula, method, or approach should I use to solve this?\n- What are the key pieces of information given in the problem?\n- What exactly am I solving for?\n- Are there any common mistakes students make with this type of problem?\n- How can I explain this in a way that helps the student understand, not just get the answer?\n- What real-world connection can I make to help the student relate to this problem?\n\nNow, based on your self-questioning, provide a complete solution that:\n1. Identifies the problem type and approach\n2. Shows clear, step-by-step work\n3. Explains the reasoning behind each step\n4. Provides the final answer\n5. Includes a brief check or verification\n\nRemember: Your goal is to help the student learn and understand, not just complete their homework.",
+        "response": "1. Identify the problem and the steps to solve it 2. Explain the main problem and the key steps 3. Explain the steps for solving it 4. Explain the main problem and the steps to solve it 5. Explain the main problems a student solves 6. Explain the method and the main problem is how to solve it.",
+        "evaluation": {
+          "accuracy": true,
+          "reasoning_clarity": 3,
+          "hallucination_score": 0,
+          "consistency": 4,
+          "age_appropriateness": 4
+        }
+      }
+    },
+    "timestamp": "2025-06-29T10:49:57.862245"
+  },
+  {
+    "problem_id": 3,
+    "question": "Find the surface area of a cube with side length 5 cm.",
+    "topic": "Mensuration",
+    "grade_level": "6\u201310",
+    "strategy_results": {
+      "zero_shot": {
+        "prompt": "You are a helpful math tutor for students in grades 6-10.\n\nYour role is to:\n- Provide clear, step-by-step solutions to math problems\n- Use age-appropriate language for middle and high school students\n- Show your work clearly\n- Give the final answer\n\nProblem: Find the surface area of a cube with side length 5 cm.\n\nPlease solve this problem and provide a clear solution with the final answer.",
+        "response": "Find the area of the cube.",
+        "evaluation": {
+          "accuracy": true,
+          "reasoning_clarity": 1,
+          "hallucination_score": 0,
+          "consistency": 3,
+          "age_appropriateness": 4
+        }
+      },
+      "few_shot": {
+        "prompt": "You are a math tutor for students in grades 6-10. Here are examples of how to help students:\n\nExample 1:\nProblem: Solve for x: 2x + 4 = 10\nSolution:\nStep 1: Subtract 4 from both sides\n2x + 4 - 4 = 10 - 4\n2x = 6\n\nStep 2: Divide both sides by 2\n2x \u00c3\u00b7 2 = 6 \u00c3\u00b7 2\nx = 3\n\nAnswer: x = 3\n\nExample 2:\nProblem: What is 1/2 + 1/3?\nSolution:\nStep 1: Find the common denominator (6)\n1/2 = 3/6\n1/3 = 2/6\n\nStep 2: Add the fractions\n3/6 + 2/6 = 5/6\n\nAnswer: 5/6\n\nExample 3:\nProblem: Find the area of a rectangle with length 8cm and width 5cm\nSolution:\nStep 1: Recall the formula for area of rectangle\nArea = length \u00c3\u2014 width\n\nStep 2: Substitute the values\nArea = 8cm \u00c3\u2014 5cm = 40cm\u00c2\u00b2\n\nAnswer: 40 cm\u00c2\u00b2\n\nNow solve this problem following the same clear, step-by-step format:\n\nProblem: Find the surface area of a cube with side length 5 cm.",
+        "response": "Answer: Step 1: Calculate the surface area of a cube with the side length 5 cm.",
+        "evaluation": {
+          "accuracy": true,
+          "reasoning_clarity": 2,
+          "hallucination_score": 0,
+          "consistency": 4,
+          "age_appropriateness": 4
+        }
+      },
+      "chain_of_thought": {
+        "prompt": "You are a math tutor for students in grades 6-10. Think step-by-step and show your reasoning clearly.\n\nProblem: Find the surface area of a cube with side length 5 cm.\n\nPlease solve this problem using the following thinking process:\n\n1. UNDERSTANDING: What type of math problem is this? What concepts are involved?\n\n2. PLANNING: What steps do I need to take to solve this? What formulas or methods should I use?\n\n3. SOLVING: Work through each step carefully, showing all calculations.\n\n4. CHECKING: Does my answer make sense? Can I verify it's correct?\n\n5. FINAL ANSWER: State the clear, final answer.\n\nRemember to:\n- Show all your work\n- Explain why each step is necessary\n- Use language appropriate for middle/high school students\n- Double-check your calculations",
+        "response": "Show all your work",
+        "evaluation": {
+          "accuracy": true,
+          "reasoning_clarity": 1,
+          "hallucination_score": 0,
+          "consistency": 2,
+          "age_appropriateness": 4
+        }
+      },
+      "meta_prompting": {
+        "prompt": "You are a math tutor for students in grades 6-10. Before solving any problem, ask yourself these key questions to provide the best help:\n\nProblem: Find the surface area of a cube with side length 5 cm.\n\nSELF-QUESTIONING PROCESS:\n\nAsk yourself:\n- What mathematical concept or topic does this problem involve?\n- What grade level is this appropriate for, and what should the student already know?\n- What formula, method, or approach should I use to solve this?\n- What are the key pieces of information given in the problem?\n- What exactly am I solving for?\n- Are there any common mistakes students make with this type of problem?\n- How can I explain this in a way that helps the student understand, not just get the answer?\n- What real-world connection can I make to help the student relate to this problem?\n\nNow, based on your self-questioning, provide a complete solution that:\n1. Identifies the problem type and approach\n2. Shows clear, step-by-step work\n3. Explains the reasoning behind each step\n4. Provides the final answer\n5. Includes a brief check or verification\n\nRemember: Your goal is to help the student learn and understand, not just complete their homework.",
+        "response": "1. Write a sheet of paper. 2. SELF-QUESTIONING",
+        "evaluation": {
+          "accuracy": true,
+          "reasoning_clarity": 2,
+          "hallucination_score": 0,
+          "consistency": 3,
+          "age_appropriateness": 4
+        }
+      }
+    },
+    "timestamp": "2025-06-29T10:50:01.968114"
+  },
+  {
+    "problem_id": 4,
+    "question": "What is the HCF of 36 and 60?",
+    "topic": "Arithmetic",
+    "grade_level": "6\u201310",
+    "strategy_results": {
+      "zero_shot": {
+        "prompt": "You are a helpful math tutor for students in grades 6-10.\n\nYour role is to:\n- Provide clear, step-by-step solutions to math problems\n- Use age-appropriate language for middle and high school students\n- Show your work clearly\n- Give the final answer\n\nProblem: What is the HCF of 36 and 60?\n\nPlease solve this problem and provide a clear solution with the final answer.",
+        "response": "HCF is the smallest number of digits in the HCF format",
+        "evaluation": {
+          "accuracy": true,
+          "reasoning_clarity": 1,
+          "hallucination_score": 0,
+          "consistency": 3,
+          "age_appropriateness": 4
+        }
+      },
+      "few_shot": {
+        "prompt": "You are a math tutor for students in grades 6-10. Here are examples of how to help students:\n\nExample 1:\nProblem: Solve for x: 2x + 4 = 10\nSolution:\nStep 1: Subtract 4 from both sides\n2x + 4 - 4 = 10 - 4\n2x = 6\n\nStep 2: Divide both sides by 2\n2x \u00c3\u00b7 2 = 6 \u00c3\u00b7 2\nx = 3\n\nAnswer: x = 3\n\nExample 2:\nProblem: What is 1/2 + 1/3?\nSolution:\nStep 1: Find the common denominator (6)\n1/2 = 3/6\n1/3 = 2/6\n\nStep 2: Add the fractions\n3/6 + 2/6 = 5/6\n\nAnswer: 5/6\n\nExample 3:\nProblem: Find the area of a rectangle with length 8cm and width 5cm\nSolution:\nStep 1: Recall the formula for area of rectangle\nArea = length \u00c3\u2014 width\n\nStep 2: Substitute the values\nArea = 8cm \u00c3\u2014 5cm = 40cm\u00c2\u00b2\n\nAnswer: 40 cm\u00c2\u00b2\n\nNow solve this problem following the same clear, step-by-step format:\n\nProblem: What is the HCF of 36 and 60?",
+        "response": "Answer: HCF = 9 + 3 = 36 and 60 = 3",
+        "evaluation": {
+          "accuracy": true,
+          "reasoning_clarity": 2,
+          "hallucination_score": 0,
+          "consistency": 3,
+          "age_appropriateness": 4
+        }
+      },
+      "chain_of_thought": {
+        "prompt": "You are a math tutor for students in grades 6-10. Think step-by-step and show your reasoning clearly.\n\nProblem: What is the HCF of 36 and 60?\n\nPlease solve this problem using the following thinking process:\n\n1. UNDERSTANDING: What type of math problem is this? What concepts are involved?\n\n2. PLANNING: What steps do I need to take to solve this? What formulas or methods should I use?\n\n3. SOLVING: Work through each step carefully, showing all calculations.\n\n4. CHECKING: Does my answer make sense? Can I verify it's correct?\n\n5. FINAL ANSWER: State the clear, final answer.\n\nRemember to:\n- Show all your work\n- Explain why each step is necessary\n- Use language appropriate for middle/high school students\n- Double-check your calculations",
+        "response": "Explain why each step is necessary",
+        "evaluation": {
+          "accuracy": true,
+          "reasoning_clarity": 2,
+          "hallucination_score": 0,
+          "consistency": 3,
+          "age_appropriateness": 4
+        }
+      },
+      "meta_prompting": {
+        "prompt": "You are a math tutor for students in grades 6-10. Before solving any problem, ask yourself these key questions to provide the best help:\n\nProblem: What is the HCF of 36 and 60?\n\nSELF-QUESTIONING PROCESS:\n\nAsk yourself:\n- What mathematical concept or topic does this problem involve?\n- What grade level is this appropriate for, and what should the student already know?\n- What formula, method, or approach should I use to solve this?\n- What are the key pieces of information given in the problem?\n- What exactly am I solving for?\n- Are there any common mistakes students make with this type of problem?\n- How can I explain this in a way that helps the student understand, not just get the answer?\n- What real-world connection can I make to help the student relate to this problem?\n\nNow, based on your self-questioning, provide a complete solution that:\n1. Identifies the problem type and approach\n2. Shows clear, step-by-step work\n3. Explains the reasoning behind each step\n4. Provides the final answer\n5. Includes a brief check or verification\n\nRemember: Your goal is to help the student learn and understand, not just complete their homework.",
+        "response": "1. What is the HCF of 36 and 60? 2. What is the correct answer? 3. Explains the problems of the problem 4. Explains the answer for the student 5. What is the HCF of 36 and 60?",
+        "evaluation": {
+          "accuracy": true,
+          "reasoning_clarity": 2,
+          "hallucination_score": 0,
+          "consistency": 3,
+          "age_appropriateness": 4
+        }
+      }
+    },
+    "timestamp": "2025-06-29T10:50:04.177368"
+  },
+  {
+    "problem_id": 5,
+    "question": "Ravi is twice as old as his sister. The sum of their ages is 36. What are their ages?",
+    "topic": "Word Problems",
+    "grade_level": "6\u201310",
+    "strategy_results": {
+      "zero_shot": {
+        "prompt": "You are a helpful math tutor for students in grades 6-10.\n\nYour role is to:\n- Provide clear, step-by-step solutions to math problems\n- Use age-appropriate language for middle and high school students\n- Show your work clearly\n- Give the final answer\n\nProblem: Ravi is twice as old as his sister. The sum of their ages is 36. What are their ages?\n\nPlease solve this problem and provide a clear solution with the final answer.",
+        "response": "Ravi is twice as old as his sister. Ravi's ages are 36. Their ages are 36 + 3 = 35. Ravi's ages are 36 + 35 = 72.",
+        "evaluation": {
+          "accuracy": true,
+          "reasoning_clarity": 3,
+          "hallucination_score": 0,
+          "consistency": 3,
+          "age_appropriateness": 4
+        }
+      },
+      "few_shot": {
+        "prompt": "You are a math tutor for students in grades 6-10. Here are examples of how to help students:\n\nExample 1:\nProblem: Solve for x: 2x + 4 = 10\nSolution:\nStep 1: Subtract 4 from both sides\n2x + 4 - 4 = 10 - 4\n2x = 6\n\nStep 2: Divide both sides by 2\n2x \u00c3\u00b7 2 = 6 \u00c3\u00b7 2\nx = 3\n\nAnswer: x = 3\n\nExample 2:\nProblem: What is 1/2 + 1/3?\nSolution:\nStep 1: Find the common denominator (6)\n1/2 = 3/6\n1/3 = 2/6\n\nStep 2: Add the fractions\n3/6 + 2/6 = 5/6\n\nAnswer: 5/6\n\nExample 3:\nProblem: Find the area of a rectangle with length 8cm and width 5cm\nSolution:\nStep 1: Recall the formula for area of rectangle\nArea = length \u00c3\u2014 width\n\nStep 2: Substitute the values\nArea = 8cm \u00c3\u2014 5cm = 40cm\u00c2\u00b2\n\nAnswer: 40 cm\u00c2\u00b2\n\nNow solve this problem following the same clear, step-by-step format:\n\nProblem: Ravi is twice as old as his sister. The sum of their ages is 36. What are their ages?",
+        "response": "Answer: Ravi is 2 * 36 = 84. Their age is 72 \u2013 84 = 84.",
+        "evaluation": {
+          "accuracy": true,
+          "reasoning_clarity": 2,
+          "hallucination_score": 0,
+          "consistency": 3,
+          "age_appropriateness": 4
+        }
+      },
+      "chain_of_thought": {
+        "prompt": "You are a math tutor for students in grades 6-10. Think step-by-step and show your reasoning clearly.\n\nProblem: Ravi is twice as old as his sister. The sum of their ages is 36. What are their ages?\n\nPlease solve this problem using the following thinking process:\n\n1. UNDERSTANDING: What type of math problem is this? What concepts are involved?\n\n2. PLANNING: What steps do I need to take to solve this? What formulas or methods should I use?\n\n3. SOLVING: Work through each step carefully, showing all calculations.\n\n4. CHECKING: Does my answer make sense? Can I verify it's correct?\n\n5. FINAL ANSWER: State the clear, final answer.\n\nRemember to:\n- Show all your work\n- Explain why each step is necessary\n- Use language appropriate for middle/high school students\n- Double-check your calculations",
+        "response": "Explain why each step is necessary",
+        "evaluation": {
+          "accuracy": true,
+          "reasoning_clarity": 2,
+          "hallucination_score": 0,
+          "consistency": 3,
+          "age_appropriateness": 4
+        }
+      },
+      "meta_prompting": {
+        "prompt": "You are a math tutor for students in grades 6-10. Before solving any problem, ask yourself these key questions to provide the best help:\n\nProblem: Ravi is twice as old as his sister. The sum of their ages is 36. What are their ages?\n\nSELF-QUESTIONING PROCESS:\n\nAsk yourself:\n- What mathematical concept or topic does this problem involve?\n- What grade level is this appropriate for, and what should the student already know?\n- What formula, method, or approach should I use to solve this?\n- What are the key pieces of information given in the problem?\n- What exactly am I solving for?\n- Are there any common mistakes students make with this type of problem?\n- How can I explain this in a way that helps the student understand, not just get the answer?\n- What real-world connection can I make to help the student relate to this problem?\n\nNow, based on your self-questioning, provide a complete solution that:\n1. Identifies the problem type and approach\n2. Shows clear, step-by-step work\n3. Explains the reasoning behind each step\n4. Provides the final answer\n5. Includes a brief check or verification\n\nRemember: Your goal is to help the student learn and understand, not just complete their homework.",
+        "response": "1. What is the answer for a math tutor? 2. What is the answer for a math teacher? 3. How will the student understand the problem? 4. What is the final answer for a math teacher? 5. What is the final answer for a math teacher?",
+        "evaluation": {
+          "accuracy": true,
+          "reasoning_clarity": 2,
+          "hallucination_score": 0,
+          "consistency": 3,
+          "age_appropriateness": 4
+        }
+      }
+    },
+    "timestamp": "2025-06-29T10:50:07.585192"
+  },
+  {
+    "problem_id": 6,
+    "question": "A coin is tossed once. What is the probability of getting a head?",
+    "topic": "Probability",
+    "grade_level": "6\u201310",
+    "strategy_results": {
+      "zero_shot": {
+        "prompt": "You are a helpful math tutor for students in grades 6-10.\n\nYour role is to:\n- Provide clear, step-by-step solutions to math problems\n- Use age-appropriate language for middle and high school students\n- Show your work clearly\n- Give the final answer\n\nProblem: A coin is tossed once. What is the probability of getting a head?\n\nPlease solve this problem and provide a clear solution with the final answer.",
+        "response": "The probability of getting a head is 7 / 100.",
+        "evaluation": {
+          "accuracy": true,
+          "reasoning_clarity": 1,
+          "hallucination_score": 0,
+          "consistency": 3,
+          "age_appropriateness": 4
+        }
+      },
+      "few_shot": {
+        "prompt": "You are a math tutor for students in grades 6-10. Here are examples of how to help students:\n\nExample 1:\nProblem: Solve for x: 2x + 4 = 10\nSolution:\nStep 1: Subtract 4 from both sides\n2x + 4 - 4 = 10 - 4\n2x = 6\n\nStep 2: Divide both sides by 2\n2x \u00c3\u00b7 2 = 6 \u00c3\u00b7 2\nx = 3\n\nAnswer: x = 3\n\nExample 2:\nProblem: What is 1/2 + 1/3?\nSolution:\nStep 1: Find the common denominator (6)\n1/2 = 3/6\n1/3 = 2/6\n\nStep 2: Add the fractions\n3/6 + 2/6 = 5/6\n\nAnswer: 5/6\n\nExample 3:\nProblem: Find the area of a rectangle with length 8cm and width 5cm\nSolution:\nStep 1: Recall the formula for area of rectangle\nArea = length \u00c3\u2014 width\n\nStep 2: Substitute the values\nArea = 8cm \u00c3\u2014 5cm = 40cm\u00c2\u00b2\n\nAnswer: 40 cm\u00c2\u00b2\n\nNow solve this problem following the same clear, step-by-step format:\n\nProblem: A coin is tossed once. What is the probability of getting a head?",
+        "response": "Answer: If you use a calculator to calculate the probability of getting a head, then the probability of getting a head is 9 / 2 = 3 probability.",
+        "evaluation": {
+          "accuracy": true,
+          "reasoning_clarity": 4,
+          "hallucination_score": 0,
+          "consistency": 3,
+          "age_appropriateness": 4
+        }
+      },
+      "chain_of_thought": {
+        "prompt": "You are a math tutor for students in grades 6-10. Think step-by-step and show your reasoning clearly.\n\nProblem: A coin is tossed once. What is the probability of getting a head?\n\nPlease solve this problem using the following thinking process:\n\n1. UNDERSTANDING: What type of math problem is this? What concepts are involved?\n\n2. PLANNING: What steps do I need to take to solve this? What formulas or methods should I use?\n\n3. SOLVING: Work through each step carefully, showing all calculations.\n\n4. CHECKING: Does my answer make sense? Can I verify it's correct?\n\n5. FINAL ANSWER: State the clear, final answer.\n\nRemember to:\n- Show all your work\n- Explain why each step is necessary\n- Use language appropriate for middle/high school students\n- Double-check your calculations",
+        "response": "Show all your work",
+        "evaluation": {
+          "accuracy": true,
+          "reasoning_clarity": 1,
+          "hallucination_score": 0,
+          "consistency": 2,
+          "age_appropriateness": 4
+        }
+      },
+      "meta_prompting": {
+        "prompt": "You are a math tutor for students in grades 6-10. Before solving any problem, ask yourself these key questions to provide the best help:\n\nProblem: A coin is tossed once. What is the probability of getting a head?\n\nSELF-QUESTIONING PROCESS:\n\nAsk yourself:\n- What mathematical concept or topic does this problem involve?\n- What grade level is this appropriate for, and what should the student already know?\n- What formula, method, or approach should I use to solve this?\n- What are the key pieces of information given in the problem?\n- What exactly am I solving for?\n- Are there any common mistakes students make with this type of problem?\n- How can I explain this in a way that helps the student understand, not just get the answer?\n- What real-world connection can I make to help the student relate to this problem?\n\nNow, based on your self-questioning, provide a complete solution that:\n1. Identifies the problem type and approach\n2. Shows clear, step-by-step work\n3. Explains the reasoning behind each step\n4. Provides the final answer\n5. Includes a brief check or verification\n\nRemember: Your goal is to help the student learn and understand, not just complete their homework.",
+        "response": "1. Answer the key questions 2. Explain the problem. 3. Explain the solution. 4. Describe the problem with the test. 5. Explain the key.",
+        "evaluation": {
+          "accuracy": true,
+          "reasoning_clarity": 2,
+          "hallucination_score": 0,
+          "consistency": 3,
+          "age_appropriateness": 4
+        }
+      }
+    },
+    "timestamp": "2025-06-29T10:50:11.324454"
+  },
+  {
+    "problem_id": 7,
+    "question": "Explain how to find the median from a set of numbers.",
+    "topic": "Data Handling",
+    "grade_level": "6\u201310",
+    "strategy_results": {
+      "zero_shot": {
+        "prompt": "You are a helpful math tutor for students in grades 6-10.\n\nYour role is to:\n- Provide clear, step-by-step solutions to math problems\n- Use age-appropriate language for middle and high school students\n- Show your work clearly\n- Give the final answer\n\nProblem: Explain how to find the median from a set of numbers.\n\nPlease solve this problem and provide a clear solution with the final answer.",
+        "response": "Use a calculator to find the median from a set of numbers",
+        "evaluation": {
+          "accuracy": true,
+          "reasoning_clarity": 1,
+          "hallucination_score": 0,
+          "consistency": 3,
+          "age_appropriateness": 4
+        }
+      },
+      "few_shot": {
+        "prompt": "You are a math tutor for students in grades 6-10. Here are examples of how to help students:\n\nExample 1:\nProblem: Solve for x: 2x + 4 = 10\nSolution:\nStep 1: Subtract 4 from both sides\n2x + 4 - 4 = 10 - 4\n2x = 6\n\nStep 2: Divide both sides by 2\n2x \u00c3\u00b7 2 = 6 \u00c3\u00b7 2\nx = 3\n\nAnswer: x = 3\n\nExample 2:\nProblem: What is 1/2 + 1/3?\nSolution:\nStep 1: Find the common denominator (6)\n1/2 = 3/6\n1/3 = 2/6\n\nStep 2: Add the fractions\n3/6 + 2/6 = 5/6\n\nAnswer: 5/6\n\nExample 3:\nProblem: Find the area of a rectangle with length 8cm and width 5cm\nSolution:\nStep 1: Recall the formula for area of rectangle\nArea = length \u00c3\u2014 width\n\nStep 2: Substitute the values\nArea = 8cm \u00c3\u2014 5cm = 40cm\u00c2\u00b2\n\nAnswer: 40 cm\u00c2\u00b2\n\nNow solve this problem following the same clear, step-by-step format:\n\nProblem: Explain how to find the median from a set of numbers.",
+        "response": "Answer: Example 1: 10  2 10 122122212212221212222222222212222222222222222222222222222222222222222222222222222222222222222222222222222222222222222",
+        "evaluation": {
+          "accuracy": true,
+          "reasoning_clarity": 2,
+          "hallucination_score": 0,
+          "consistency": 3,
+          "age_appropriateness": 4
+        }
+      },
+      "chain_of_thought": {
+        "prompt": "You are a math tutor for students in grades 6-10. Think step-by-step and show your reasoning clearly.\n\nProblem: Explain how to find the median from a set of numbers.\n\nPlease solve this problem using the following thinking process:\n\n1. UNDERSTANDING: What type of math problem is this? What concepts are involved?\n\n2. PLANNING: What steps do I need to take to solve this? What formulas or methods should I use?\n\n3. SOLVING: Work through each step carefully, showing all calculations.\n\n4. CHECKING: Does my answer make sense? Can I verify it's correct?\n\n5. FINAL ANSWER: State the clear, final answer.\n\nRemember to:\n- Show all your work\n- Explain why each step is necessary\n- Use language appropriate for middle/high school students\n- Double-check your calculations",
+        "response": "Explain why each step is necessary",
+        "evaluation": {
+          "accuracy": true,
+          "reasoning_clarity": 2,
+          "hallucination_score": 0,
+          "consistency": 3,
+          "age_appropriateness": 4
+        }
+      },
+      "meta_prompting": {
+        "prompt": "You are a math tutor for students in grades 6-10. Before solving any problem, ask yourself these key questions to provide the best help:\n\nProblem: Explain how to find the median from a set of numbers.\n\nSELF-QUESTIONING PROCESS:\n\nAsk yourself:\n- What mathematical concept or topic does this problem involve?\n- What grade level is this appropriate for, and what should the student already know?\n- What formula, method, or approach should I use to solve this?\n- What are the key pieces of information given in the problem?\n- What exactly am I solving for?\n- Are there any common mistakes students make with this type of problem?\n- How can I explain this in a way that helps the student understand, not just get the answer?\n- What real-world connection can I make to help the student relate to this problem?\n\nNow, based on your self-questioning, provide a complete solution that:\n1. Identifies the problem type and approach\n2. Shows clear, step-by-step work\n3. Explains the reasoning behind each step\n4. Provides the final answer\n5. Includes a brief check or verification\n\nRemember: Your goal is to help the student learn and understand, not just complete their homework.",
+        "response": "1. SELF-QUESTIONING",
+        "evaluation": {
+          "accuracy": true,
+          "reasoning_clarity": 2,
+          "hallucination_score": 0,
+          "consistency": 2,
+          "age_appropriateness": 4
+        }
+      }
+    },
+    "timestamp": "2025-06-29T10:50:13.749628"
+  },
+  {
+    "problem_id": 8,
+    "question": "Factorize the expression: x\u00c2\u00b2 - 5x + 6",
+    "topic": "Algebra",
+    "grade_level": "6\u201310",
+    "strategy_results": {
+      "zero_shot": {
+        "prompt": "You are a helpful math tutor for students in grades 6-10.\n\nYour role is to:\n- Provide clear, step-by-step solutions to math problems\n- Use age-appropriate language for middle and high school students\n- Show your work clearly\n- Give the final answer\n\nProblem: Factorize the expression: x\u00c2\u00b2 - 5x + 6\n\nPlease solve this problem and provide a clear solution with the final answer.",
+        "response": "Use a math tutor",
+        "evaluation": {
+          "accuracy": true,
+          "reasoning_clarity": 1,
+          "hallucination_score": 0,
+          "consistency": 2,
+          "age_appropriateness": 4
+        }
+      },
+      "few_shot": {
+        "prompt": "You are a math tutor for students in grades 6-10. Here are examples of how to help students:\n\nExample 1:\nProblem: Solve for x: 2x + 4 = 10\nSolution:\nStep 1: Subtract 4 from both sides\n2x + 4 - 4 = 10 - 4\n2x = 6\n\nStep 2: Divide both sides by 2\n2x \u00c3\u00b7 2 = 6 \u00c3\u00b7 2\nx = 3\n\nAnswer: x = 3\n\nExample 2:\nProblem: What is 1/2 + 1/3?\nSolution:\nStep 1: Find the common denominator (6)\n1/2 = 3/6\n1/3 = 2/6\n\nStep 2: Add the fractions\n3/6 + 2/6 = 5/6\n\nAnswer: 5/6\n\nExample 3:\nProblem: Find the area of a rectangle with length 8cm and width 5cm\nSolution:\nStep 1: Recall the formula for area of rectangle\nArea = length \u00c3\u2014 width\n\nStep 2: Substitute the values\nArea = 8cm \u00c3\u2014 5cm = 40cm\u00c2\u00b2\n\nAnswer: 40 cm\u00c2\u00b2\n\nNow solve this problem following the same clear, step-by-step format:\n\nProblem: Factorize the expression: x\u00c2\u00b2 - 5x + 6",
+        "response": "Answer: -1",
+        "evaluation": {
+          "accuracy": true,
+          "reasoning_clarity": 2,
+          "hallucination_score": 0,
+          "consistency": 2,
+          "age_appropriateness": 4
+        }
+      },
+      "chain_of_thought": {
+        "prompt": "You are a math tutor for students in grades 6-10. Think step-by-step and show your reasoning clearly.\n\nProblem: Factorize the expression: x\u00c2\u00b2 - 5x + 6\n\nPlease solve this problem using the following thinking process:\n\n1. UNDERSTANDING: What type of math problem is this? What concepts are involved?\n\n2. PLANNING: What steps do I need to take to solve this? What formulas or methods should I use?\n\n3. SOLVING: Work through each step carefully, showing all calculations.\n\n4. CHECKING: Does my answer make sense? Can I verify it's correct?\n\n5. FINAL ANSWER: State the clear, final answer.\n\nRemember to:\n- Show all your work\n- Explain why each step is necessary\n- Use language appropriate for middle/high school students\n- Double-check your calculations",
+        "response": "Explain why each step is necessary",
+        "evaluation": {
+          "accuracy": true,
+          "reasoning_clarity": 2,
+          "hallucination_score": 0,
+          "consistency": 3,
+          "age_appropriateness": 4
+        }
+      },
+      "meta_prompting": {
+        "prompt": "You are a math tutor for students in grades 6-10. Before solving any problem, ask yourself these key questions to provide the best help:\n\nProblem: Factorize the expression: x\u00c2\u00b2 - 5x + 6\n\nSELF-QUESTIONING PROCESS:\n\nAsk yourself:\n- What mathematical concept or topic does this problem involve?\n- What grade level is this appropriate for, and what should the student already know?\n- What formula, method, or approach should I use to solve this?\n- What are the key pieces of information given in the problem?\n- What exactly am I solving for?\n- Are there any common mistakes students make with this type of problem?\n- How can I explain this in a way that helps the student understand, not just get the answer?\n- What real-world connection can I make to help the student relate to this problem?\n\nNow, based on your self-questioning, provide a complete solution that:\n1. Identifies the problem type and approach\n2. Shows clear, step-by-step work\n3. Explains the reasoning behind each step\n4. Provides the final answer\n5. Includes a brief check or verification\n\nRemember: Your goal is to help the student learn and understand, not just complete their homework.",
+        "response": "1. Describe the problem with the problem 2. Explain the problem with the problem 3. Explain the main problem 4. Explain the main problem 5. Explain the main problem with the problem 6. Explain the problem with the main problem 7. Explain the main problem in the math test 8. Explain the main problem with the problem 9. Explain the main problem in the math test 10. Explain the main problem with the problem 11. Explain the main problem with the problem 12. Describe the problem with the problem in the math test",
+        "evaluation": {
+          "accuracy": true,
+          "reasoning_clarity": 2,
+          "hallucination_score": 0,
+          "consistency": 3,
+          "age_appropriateness": 4
+        }
+      }
+    },
+    "timestamp": "2025-06-29T10:50:21.404129"
+  },
+  {
+    "problem_id": 9,
+    "question": "What is sin(30\u00c2\u00b0) and cos(60\u00c2\u00b0)?",
+    "topic": "Trigonometry (basic)",
+    "grade_level": "6\u201310",
+    "strategy_results": {
+      "zero_shot": {
+        "prompt": "You are a helpful math tutor for students in grades 6-10.\n\nYour role is to:\n- Provide clear, step-by-step solutions to math problems\n- Use age-appropriate language for middle and high school students\n- Show your work clearly\n- Give the final answer\n\nProblem: What is sin(30\u00c2\u00b0) and cos(60\u00c2\u00b0)?\n\nPlease solve this problem and provide a clear solution with the final answer.",
+        "response": "Sin(30\u00b0) and cos(60\u00b0)",
+        "evaluation": {
+          "accuracy": true,
+          "reasoning_clarity": 1,
+          "hallucination_score": 0,
+          "consistency": 3,
+          "age_appropriateness": 4
+        }
+      },
+      "few_shot": {
+        "prompt": "You are a math tutor for students in grades 6-10. Here are examples of how to help students:\n\nExample 1:\nProblem: Solve for x: 2x + 4 = 10\nSolution:\nStep 1: Subtract 4 from both sides\n2x + 4 - 4 = 10 - 4\n2x = 6\n\nStep 2: Divide both sides by 2\n2x \u00c3\u00b7 2 = 6 \u00c3\u00b7 2\nx = 3\n\nAnswer: x = 3\n\nExample 2:\nProblem: What is 1/2 + 1/3?\nSolution:\nStep 1: Find the common denominator (6)\n1/2 = 3/6\n1/3 = 2/6\n\nStep 2: Add the fractions\n3/6 + 2/6 = 5/6\n\nAnswer: 5/6\n\nExample 3:\nProblem: Find the area of a rectangle with length 8cm and width 5cm\nSolution:\nStep 1: Recall the formula for area of rectangle\nArea = length \u00c3\u2014 width\n\nStep 2: Substitute the values\nArea = 8cm \u00c3\u2014 5cm = 40cm\u00c2\u00b2\n\nAnswer: 40 cm\u00c2\u00b2\n\nNow solve this problem following the same clear, step-by-step format:\n\nProblem: What is sin(30\u00c2\u00b0) and cos(60\u00c2\u00b0)?",
+        "response": "Answer: Singing is the only time that has a change in the weight of the amount of the liquid. Singing is the first time that has a change in the weight of the liquid. Singing is the second time that has a change in the weight of the liquid. Singing is the first time that has a change in the weight of the liquid. Singing is the last time that has a change in the weight of the liquid. Singing is the first time that has a change in the weight of the liquid. Singing is the second time that has a change in the weight of the liquid. Singing is the second time that has a change in the weight of the liquid. Singing is the third time that has a change in the weight of the liquid. Singing is the second time that has a change in the weight of the liquid. Singing is the second time that has a change in the weight of the liquid. Singing is the second time that has a change in the weight of the liquid. Singing is the third time that has a change in the weight of the liquid. Singing",
+        "evaluation": {
+          "accuracy": true,
+          "reasoning_clarity": 3,
+          "hallucination_score": 0,
+          "consistency": 3,
+          "age_appropriateness": 4
+        }
+      },
+      "chain_of_thought": {
+        "prompt": "You are a math tutor for students in grades 6-10. Think step-by-step and show your reasoning clearly.\n\nProblem: What is sin(30\u00c2\u00b0) and cos(60\u00c2\u00b0)?\n\nPlease solve this problem using the following thinking process:\n\n1. UNDERSTANDING: What type of math problem is this? What concepts are involved?\n\n2. PLANNING: What steps do I need to take to solve this? What formulas or methods should I use?\n\n3. SOLVING: Work through each step carefully, showing all calculations.\n\n4. CHECKING: Does my answer make sense? Can I verify it's correct?\n\n5. FINAL ANSWER: State the clear, final answer.\n\nRemember to:\n- Show all your work\n- Explain why each step is necessary\n- Use language appropriate for middle/high school students\n- Double-check your calculations",
+        "response": "Show all your work",
+        "evaluation": {
+          "accuracy": true,
+          "reasoning_clarity": 1,
+          "hallucination_score": 0,
+          "consistency": 2,
+          "age_appropriateness": 4
+        }
+      },
+      "meta_prompting": {
+        "prompt": "You are a math tutor for students in grades 6-10. Before solving any problem, ask yourself these key questions to provide the best help:\n\nProblem: What is sin(30\u00c2\u00b0) and cos(60\u00c2\u00b0)?\n\nSELF-QUESTIONING PROCESS:\n\nAsk yourself:\n- What mathematical concept or topic does this problem involve?\n- What grade level is this appropriate for, and what should the student already know?\n- What formula, method, or approach should I use to solve this?\n- What are the key pieces of information given in the problem?\n- What exactly am I solving for?\n- Are there any common mistakes students make with this type of problem?\n- How can I explain this in a way that helps the student understand, not just get the answer?\n- What real-world connection can I make to help the student relate to this problem?\n\nNow, based on your self-questioning, provide a complete solution that:\n1. Identifies the problem type and approach\n2. Shows clear, step-by-step work\n3. Explains the reasoning behind each step\n4. Provides the final answer\n5. Includes a brief check or verification\n\nRemember: Your goal is to help the student learn and understand, not just complete their homework.",
+        "response": "1. What is sin(30\u00b0) and cos(60\u00b0)? 2. What is the answer? 3. What is the math problem? 4. Doesn't the student understand the problem? 5. What are the key steps to solving it?",
+        "evaluation": {
+          "accuracy": true,
+          "reasoning_clarity": 3,
+          "hallucination_score": 0,
+          "consistency": 4,
+          "age_appropriateness": 4
+        }
+      }
+    },
+    "timestamp": "2025-06-29T10:50:25.055582"
+  },
+  {
+    "problem_id": 10,
+    "question": "What is the distance between the points (3,4) and (0,0)?",
+    "topic": "Coordinate Geometry",
+    "grade_level": "6\u201310",
+    "strategy_results": {
+      "zero_shot": {
+        "prompt": "You are a helpful math tutor for students in grades 6-10.\n\nYour role is to:\n- Provide clear, step-by-step solutions to math problems\n- Use age-appropriate language for middle and high school students\n- Show your work clearly\n- Give the final answer\n\nProblem: What is the distance between the points (3,4) and (0,0)?\n\nPlease solve this problem and provide a clear solution with the final answer.",
+        "response": "3:0",
+        "evaluation": {
+          "accuracy": true,
+          "reasoning_clarity": 1,
+          "hallucination_score": 0,
+          "consistency": 2,
+          "age_appropriateness": 4
+        }
+      },
+      "few_shot": {
+        "prompt": "You are a math tutor for students in grades 6-10. Here are examples of how to help students:\n\nExample 1:\nProblem: Solve for x: 2x + 4 = 10\nSolution:\nStep 1: Subtract 4 from both sides\n2x + 4 - 4 = 10 - 4\n2x = 6\n\nStep 2: Divide both sides by 2\n2x \u00c3\u00b7 2 = 6 \u00c3\u00b7 2\nx = 3\n\nAnswer: x = 3\n\nExample 2:\nProblem: What is 1/2 + 1/3?\nSolution:\nStep 1: Find the common denominator (6)\n1/2 = 3/6\n1/3 = 2/6\n\nStep 2: Add the fractions\n3/6 + 2/6 = 5/6\n\nAnswer: 5/6\n\nExample 3:\nProblem: Find the area of a rectangle with length 8cm and width 5cm\nSolution:\nStep 1: Recall the formula for area of rectangle\nArea = length \u00c3\u2014 width\n\nStep 2: Substitute the values\nArea = 8cm \u00c3\u2014 5cm = 40cm\u00c2\u00b2\n\nAnswer: 40 cm\u00c2\u00b2\n\nNow solve this problem following the same clear, step-by-step format:\n\nProblem: What is the distance between the points (3,4) and (0,0)?",
+        "response": "Answer: Distance traveled is 3 / 4 * 6 = 9 miles. Distance traveled is 3 / 4 * 9 = 8 miles. Distance traveled is 2 / 4 * 8 = 3 miles. Distance traveled is 3 / 4 * 3 = 8 miles. Distance traveled is 4 / 4 * 8 = 8 miles. Distance traveled is 4 / 4 * 4 = 96 miles. Distance traveled is 96 / 2 * 4 = 90 miles. Distance traveled is 96 / 2 * 90 = 3 miles. Distance traveled is 96 / 2 * 90 = 30 miles. Distance traveled is 96 / 2 * 90 = 80 miles. Distance traveled is 90 / 2 * 90 = 10 miles. Distance traveled is 96 / 2 * 30 = 90 miles. Distance traveled is 96 / 2 * 30 = 100 miles. Distance traveled is 96 / 3 * 90 = 300 miles. Distance traveled is 96 / 3 * 30 = 90 miles. Distance traveled is 96 / 3 * 30 = 50 miles. Distance traveled is 96 / 4 * 50 = 150 miles. Distance traveled is 96 / 4 * 150 = 2 miles. Distance traveled is 96 /",
+        "evaluation": {
+          "accuracy": true,
+          "reasoning_clarity": 3,
+          "hallucination_score": 0,
+          "consistency": 3,
+          "age_appropriateness": 4
+        }
+      },
+      "chain_of_thought": {
+        "prompt": "You are a math tutor for students in grades 6-10. Think step-by-step and show your reasoning clearly.\n\nProblem: What is the distance between the points (3,4) and (0,0)?\n\nPlease solve this problem using the following thinking process:\n\n1. UNDERSTANDING: What type of math problem is this? What concepts are involved?\n\n2. PLANNING: What steps do I need to take to solve this? What formulas or methods should I use?\n\n3. SOLVING: Work through each step carefully, showing all calculations.\n\n4. CHECKING: Does my answer make sense? Can I verify it's correct?\n\n5. FINAL ANSWER: State the clear, final answer.\n\nRemember to:\n- Show all your work\n- Explain why each step is necessary\n- Use language appropriate for middle/high school students\n- Double-check your calculations",
+        "response": "Explain why each step is necessary",
+        "evaluation": {
+          "accuracy": true,
+          "reasoning_clarity": 2,
+          "hallucination_score": 0,
+          "consistency": 3,
+          "age_appropriateness": 4
+        }
+      },
+      "meta_prompting": {
+        "prompt": "You are a math tutor for students in grades 6-10. Before solving any problem, ask yourself these key questions to provide the best help:\n\nProblem: What is the distance between the points (3,4) and (0,0)?\n\nSELF-QUESTIONING PROCESS:\n\nAsk yourself:\n- What mathematical concept or topic does this problem involve?\n- What grade level is this appropriate for, and what should the student already know?\n- What formula, method, or approach should I use to solve this?\n- What are the key pieces of information given in the problem?\n- What exactly am I solving for?\n- Are there any common mistakes students make with this type of problem?\n- How can I explain this in a way that helps the student understand, not just get the answer?\n- What real-world connection can I make to help the student relate to this problem?\n\nNow, based on your self-questioning, provide a complete solution that:\n1. Identifies the problem type and approach\n2. Shows clear, step-by-step work\n3. Explains the reasoning behind each step\n4. Provides the final answer\n5. Includes a brief check or verification\n\nRemember: Your goal is to help the student learn and understand, not just complete their homework.",
+        "response": "1. How do I solve the problem? 2. How do I help the student understand it? 3. How can I explain it to the student? 4. How to correct it? 5. How do I pass the test?",
+        "evaluation": {
+          "accuracy": true,
+          "reasoning_clarity": 2,
+          "hallucination_score": 0,
+          "consistency": 3,
+          "age_appropriateness": 4
+        }
+      }
+    },
+    "timestamp": "2025-06-29T10:50:34.913683"
+  }
+]
